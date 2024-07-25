@@ -17,8 +17,13 @@ Sabendo disso, o mínimo que é esperado nesse projeto é de um website:
 4. Estilizado
 5. Manutenível
 
-## Tech Stack
+## Metodologia Ágil
+A metodologia ágil é um modelo e uma filosofia que propõe alternativas à gestão de projetos tradicional e tem a função de aprimorar o processo de desenvolvimento de um produto ou serviço. Com isso, o objetivo é fazer entregas com agilidade, conforme surgem as necessidades do cliente.
 
+Como parte do Desafio Bonus desse projeto, para organiza os progressos e avanços, foi utilizado uma ferramenta para tornar o acompanhamento e validação por parte da empresa XPTO mais fácil. Onde utilizei o ferramenta Trello, o link se encontra abaixo:
+https://trello.com/invite/b/66a2ba9d17e2f010d73ad96d/ATTIc071449fde84308ea932ec32dd92e2e43CF3D4FD/simulador-2-telos-kanban
+
+## Tech Stack
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
 
