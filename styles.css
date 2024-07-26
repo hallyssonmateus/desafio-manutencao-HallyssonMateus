@@ -8,7 +8,9 @@
 :root {
     --fontTitle: 'Montserrat', sans-serif;
     --fontMessage: 'Chakra Petch', sans-serif;
+    --corbotao: #2E8B57;
     --cor1: #000;
+    --cor2: #fff;
     --corgrids: #87CEEB;
 }
 
@@ -41,7 +43,6 @@ header > nav > ul {
 }
 
 .banner {
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,30 +61,48 @@ header > nav > ul {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* background-color: #FFD700; */
+    padding: 40px;
+}
+
+.conteudo > p {
+    padding: 10px;
+    font-family: var(--fontMessage);
+    font-size: 20px;
+}
+
+.button-desing {
+    background-color: var(--corbotao);
+    padding: 20px;
+    border-radius: 8px;
+    font-family: var(--fontTitle);
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--cor2);
+    cursor: pointer;
 }
 
 main {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #FFD700;
 }
 
 .details {
-    border: 5px solid blue;
     display: flex;
     flex-direction: row;
     gap: 40px;
-    padding: 20px;
+    padding: 40px;
 }
 
 .details-itens {
-    border: 1px solid yellow;
     background-color: var(--corgrids);
     font-family: var(--fontMessage);
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
     font-size: 30px;
     border-radius: 10px;
@@ -100,7 +119,7 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 10px;
+    padding: 20px;
 
 }
 
