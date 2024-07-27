@@ -11,6 +11,7 @@
     --corbotao: #2E8B57;
     --cor1: #000;
     --cor2: #fff;
+    --cor3: #FFD700;
     --corgrids: #87CEEB;
 }
 
@@ -24,19 +25,29 @@ h2 {
 header {
     display: flex;
     background-color: var(--cor1);
-    color: #fff;
+    color: var(--cor2);
     font-size: 18px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
 }
+
 header > a {
-    color: #fff;
+    color: var(--cor2);
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+header > nav > ul > li > a {
+    color: var(--cor2);
     font-size: 18px;
     text-decoration: none;
+    cursor: pointer;
 }
 header > nav > ul {
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     gap: 32px;
@@ -89,7 +100,7 @@ main {
     flex-direction: column;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #FFD700;
+    background-color: var(--cor3);
 }
 
 .details {
@@ -97,6 +108,8 @@ main {
     flex-direction: row;
     gap: 40px;
     padding: 40px;
+    /* Aplicando responsividade no site */
+    flex-wrap: wrap; 
 }
 
 .details-itens {
@@ -114,22 +127,31 @@ main {
 }
 
 footer {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--cor1);
+    color: var(--cor2);
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 32px;
     padding: 20px;
-
 }
 
 footer > ul {
     display: flex;
+    flex-direction: column;
     gap: 32px;
+}
+
+footer > ul > li {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-family: var(--fontTitle);
+    font-size: 16px;
 }
 
 footer > ul > li > a {
     font-size: 14px;
-    color: #fff;
+    color: var(--cor2);
     text-decoration: none;
 }
