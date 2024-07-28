@@ -20,6 +20,6 @@ const fecharModal = () => {
 //     document.getElementById('botao-clicado').addEventListener('click', clicked)
 // })
 
-//Evento mostrar o modal
+//Evento mostrar e fechar o modal
 openModalButtom.addEventListener("click", openModal);
 fecharModalButtom.addEventListener("click", fecharModal);

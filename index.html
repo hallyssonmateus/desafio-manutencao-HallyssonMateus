@@ -3,64 +3,79 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8" />
-    <title>Site XPTO</title>    
-    <link rel="stylesheet" href="/styles.css"/>
+    <title>Site XPTO</title>
+    <link rel="stylesheet" href="/styles.css" />
 
-<!-- Aplicação do uso do SEO -->
-<meta name="description" content="XPTO, uma empresa focada e com grandes especialistas">
-<meta name="keywords" content="mercado, especialistas, financas, multinacional, consultoria">
-<script src="./index.js" defer></script>
+    <!-- Aplicação do uso do SEO -->
+    <meta
+    name="description"
+    content="XPTO, uma empresa focada e com grandes especialistas"
+    />
+    <meta
+    name="keywords"
+    content="mercado, especialistas, financas, multinacional, consultoria"
+    />
+    <script src="./index.js" defer></script>
 </head>
 
 <body>
     <header>
-        <a href="/">XPTO</a>
-        <nav>
-            <ul>
-                <li><a>Sobre</a></li>
-                <li><a>Quem somos</a></li>
-                <li><a>Contato</a></li>
-            </ul>
-        </nav>
+    <a href="/" alt="Logo">XPTO</a>
+    <nav>
+        <ul>
+          <li><a href="#banner">SOBRE</a></li>
+          <li><a href="#cont">QUEM SOMOS</a></li>
+          <li><a href="#rodape">CONTATO</a></li>
+        </ul>
+    </nav>
     </header>
 
-    <section class="banner">
-        <img src="https://vooozer.com/wp-content/uploads/2018/10/exemplo-marketing-de-relacionamento.png"
-            alt="Imagem de um homem de terno se preparando pra apontar uma flecha no alvo, indicando ser uma empresa com proposito e objetivos."
-            title="Banner que indica que somos uma empresa de propositos e objetivos!"/>
+    <section class="banner" id="banner" alt="Seção do banner do site!">
+      <img
+        src="https://vooozer.com/wp-content/uploads/2018/10/exemplo-marketing-de-relacionamento.png"
+        alt="Imagem de um homem de terno se preparando pra apontar uma flecha no alvo, indicando ser uma empresa com proposito e objetivos."
+        title="Banner que indica que somos uma empresa de propositos e objetivos!"
+      />
     </section>
 
-    <section class="conteudo">
-        <h1>Quem somos</h1>
-        <p>XPTO, atuamos com isso, isso e aquilo a muitos anos no mercado,
-            contrate já!</p> 
-        <button class="button-desing" id="botao-clicado">Contrate</button>
+    <section class="conteudo" id="cont" alt="Seção sobre nós!">
+    <h1>Quem Somos</h1>
+    <p>
+        XPTO, atuamos com isso, isso e aquilo a muitos anos no mercado, contrate
+        já!
+    </p>
+    <button class="button-desing" id="botao-clicado">Contrate</button>
     </section>
-    
+
     <div class="modal hide" id="modalID">
-        <div class="modal-header">
-            <h2>Obrigado por nos escolher</h2>
-            <button class="button-fechar" id="button-fechar">X</button>
-        </div>
-        <div class="modal-body">
-            <p>Aqui na XPTO valorizamos nossos clientes e pensamos sempre em crescer juntos.</p>
-            <p>Mande um mensagem para mais informações e sobre nossos serviços no email abaixo!</p>
-            <p><strong>E-mail:</strong> xptoatendimentos@gmail.com</p>
-        </div>
+    <div class="modal-header">
+        <h2>Obrigado por nos escolher</h2>
+        <button class="button-fechar" id="button-fechar">X</button>
     </div>
-    
-    <main>
-    <h1>Interessado?</h1>  
-    <h2>Vem ser XPTO</h2> 
+    <div class="modal-body">
+        <p>
+          Aqui na XPTO valorizamos nossos clientes e pensamos sempre em crescer
+          juntos.
+        </p>
+        <p>
+          Entre em contato para mais informações, sobre nossos serviços ou tirar duvidas no
+          email abaixo!
+        </p>
+        <p><strong>E-mail:</strong> xptoatendimentos@gmail.com</p>
+    </div>
+    </div>
+
+    <main alt="Seção de quem somos, nossa cultura e valores">
+    <h1>Interessado?</h1>
+    <h2>Vem ser XPTO</h2>
     <div class="details">
         <div class="details-itens">Somos especialistas</div>
         <div class="details-itens">Time capacitado</div>
-        <div class="details-itens">Apaixonados pelo sucesso</div> 
+        <div class="details-itens">Apaixonados pelo sucesso</div>
     </div>
     </main>
 
-    <footer>
-    
+    <footer id="rodape" alt="Seção do rodapé do site">
     <ul>
         <h3>Contato</h3>
         <li><a href="https://github.com/">Facebook</a></li>
@@ -71,7 +86,12 @@
         <li><a href="https://github.com/">Politicas de privacidade</a></li>
         <li><a href="https://github.com/">Termos de uso</a></li>
     </ul>
+
+    <ul>
+        <h3>XPTO</h3>
+        <li><a href="https://github.com/">Nossa Historia</a></li>
+        <li><a href="https://github.com/">Parceiros</a></li>
+    </ul>
     </footer>
 </body>
-
 </html>
