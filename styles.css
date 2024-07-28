@@ -33,6 +33,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 header > a {
@@ -42,16 +43,18 @@ header > a {
     text-decoration: none;
 }
 
-header > nav > ul > li > a:hover {
-    color: var(--cor3);
-}
-
 header > nav > ul > li > a {
     color: var(--cor2);
     font-size: 18px;
     text-decoration: none;
     cursor: pointer;
+    flex-wrap: wrap;
 }
+
+header > nav > ul > li > a:hover {
+    color: var(--cor3);
+}
+
 header > nav > ul {
     list-style-type: none;
     display: flex;
@@ -194,6 +197,7 @@ footer {
     align-items: center;
     gap: 32px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 footer > ul {

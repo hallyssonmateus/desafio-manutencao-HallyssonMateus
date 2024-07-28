@@ -1,10 +1,8 @@
 # Simulator Télos - Nível#2
 
-Sejam muito bem-vindos ao Simulator - Nível #2! Neste nível você teve a oportunidade de aprender sobre a base do universo de websites que utilizam da sua base em HTML, estilização em CSS e eventos em Javascript. Não só isso, você aprendeu sobre a importância da responsividade, acessibilidade, análise de código com a ferramenta nativa do navegador (DevTools) e muito mais. Que tal agora colocar todo esse conhecimento em um projeto mão na massa?🙂
+ ## Contextualização
 
-## Contextualização
-
-Agora vamos atuar com um mini-projeto real (com o que há de melhor no mercado hehe), onde você vai ter a possibilidade de construir um projeto desde a sua idealização, organização e atuação onde cada tarefa será versionada no GitHub (que vocês já aprenderam anteriormente).
+Sejam muito bem-vindos ao Simulator - Nível #2! Agora vamos atuar com um mini-projeto real (com o que há de melhor no mercado hehe), onde você vai ter a possibilidade de construir um projeto desde a sua idealização, organização e atuação onde cada tarefa será versionada no GitHub (que vocês já aprenderam anteriormente).
 
 ## Descrição
 
@@ -22,6 +20,14 @@ A metodologia ágil é um modelo e uma filosofia que propõe alternativas à ges
 
 Como parte do Desafio Bonus desse projeto, para organiza os progressos e avanços, foi utilizado uma ferramenta para tornar o acompanhamento e validação por parte da empresa XPTO mais fácil. Onde utilizei o ferramenta Trello, o link se encontra abaixo:
 https://trello.com/invite/b/66a2ba9d17e2f010d73ad96d/ATTIc071449fde84308ea932ec32dd92e2e43CF3D4FD/simulador-2-telos-kanban
+
+## Resultado
+E com grande satisfação que venho anunciar a finalização desse simulador, foi uma experiencia desafiadora mas gratificante e divertida no processo. Apliquei os conceitos vistos em aula, revisão de outros conteudos e por fim, conclui a revitalização e estilização do site, onde:
+1. Tornei o site semantico e com as praticas SEO.
+2. Ser responsivo com o uso do Flexbox.
+3. Utilizar o uso de variavéis na definição das cores e fontes no css.
+4. Uso do DevTools para verificação de assessibilidade.
+5. Uso de eventos e funções do JavaScript para animações e uma mensagem de CTA, caso o usuario se interesse.
 
 ## Tech Stack
 
