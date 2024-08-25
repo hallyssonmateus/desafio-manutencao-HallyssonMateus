@@ -6,6 +6,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /* Uso de variaveis pra definir as cores e fontes */
 :root {
     --fontTitle: 'Montserrat', sans-serif;
@@ -17,10 +18,13 @@
     --corfechar: #4F4F4F;
     --corgrids: #87CEEB;
 }
+body {
+    overflow-x: hidden;
+}
 /* Estilização Barra de navegação */
 header {
     width: 100%;
-    padding: 15px 8%;
+    padding: 20px 8%;
     background-color: var(--cor1);
 }
 
@@ -88,158 +92,73 @@ header {
 }
 /* Estilização Banner */
 
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+section.slider{
+    margin: 0 auto;
+    padding: 0 !important;
     width: 100%;
+    /* height: 550px; */
     overflow: hidden;
 }
 
-.banner img {
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: contain;
-}
-
-/* Estilização Conteudo Principal */
-
-.conteudo {
-    height: 300px;
+.slider-content {
+    width: 300%;
+    height: 100%;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
 }
 
-.conteudo > p {
-    padding: 10px;
-    font-family: var(--fontMessage);
-    font-size: 20px;
+.slider-content input {
+    display: none;
 }
 
-.button-desing {
-    background-color: var(--corbotao);
-    padding: 20px;
-    border-radius: 8px;
-    font-family: var(--fontTitle);
-    font-size: 20px;
-    font-weight: 700;
-    font-style: normal;
-    color: var(--cor2);
-    cursor: pointer;
+.slide-box {
+    width: 33.3333%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    transition: 1s;
 }
 
-.modal {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    background-color: var(--corgrids);
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 600px;
+.slide-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
-
-.modal-header {
-    padding: 10px;
-    display: flex;
-    gap: 200px;
-    align-items: center;
-    border-bottom: 1px solid var(--corfechar);
-}
-
-.button-fechar {
-    height: 40px;
-    background-color: var(--corfechar);
-    color: var(--cor2);
-    font-weight: 700;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.modal-body {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    font-size: 18px;
-    font-family: var(--fontTitle);
-}
-
-.modal-body > p {
-    padding-bottom: 6px;
-}
-
-.hide {
-    opacity: 0;
-}
-
-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 350px;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    background-color: var(--cor3);
-}
-
-.details {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    padding: 40px;
-    /* Aplicando responsividade no site */
-    flex-wrap: wrap; 
-}
-
-.details-itens {
-    background-color: var(--corgrids);
-    font-family: var(--fontMessage);
-    font-weight: 700;
-    font-style: normal;
-    font-size: 30px;
-    border-radius: 10px;
-    padding: 10px;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Estilização Footer/Rodapé */
-
-footer {
-    background-color: var(--cor1);
-    color: var(--cor2);
+.nav-manual, .nav-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 52%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 32px;
-    padding: 20px;
-    flex-wrap: wrap;
 }
 
-footer > ul {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+.manual-btn, .nav-auto div {
+    border: 1px solid var(--corgrids);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-footer > ul > li {
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    font-family: var(--fontTitle);
-    font-size: 16px;
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
 }
 
-footer > ul > li > a {
-    font-size: 14px;
-    color: var(--cor2);
-    text-decoration: none;
+.nav-manual .manual-btn:hover {
+    background-color: var(--corgrids);
+}
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: var(--corgrids);
+}
+
+#radio1:checked ~ .active-slide{
+    margin-left: 0%;
+}
+#radio2:checked ~ .active-slide{
+    margin-left: -33.3333%;
+}
+#radio3:checked ~ .active-slide{
+    margin-left: -66.6666%;
 }
