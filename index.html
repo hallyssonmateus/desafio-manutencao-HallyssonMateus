@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8" />
     <title>Site XPTO</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/styles.css"/>
 
     <!-- Aplicação do uso do SEO -->
     <meta
@@ -15,19 +15,33 @@
     name="keywords"
     content="mercado, especialistas, financas, multinacional, consultoria"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./index.js" defer></script>
 </head>
 
 <body>
     <header>
-    <a href="/" alt="Logo">XPTO</a>
-    <nav>
-        <ul>
-          <li><a href="#banner">SOBRE</a></li>
-          <li><a href="#cont">QUEM SOMOS</a></li>
-          <li><a href="#rodape">CONTATO</a></li>
-        </ul>
+    <nav id="navbar">
+      <i class="fa-solid fa-users-viewfinder" id="nav_logo"> XPto</i>
+      <ul id="nav_list">
+          <li class="nav-item active"><a href="#">Início</a></li>
+          <li class="nav-item"><a href="#banner">Sobre</a></li>
+          <li class="nav-item"><a href="#cont">Quem Somos</a></li>
+          <li class="nav-item"><a href="#rodape">Contato</a></li>
+      </ul>
+
+      <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
     </nav>
+
+    <div id="mobile_menu">
+      <ul id="mobile_nav_list">
+        <li class="nav-item"><a href="#banner">Início</a></li>
+        <li class="nav-item"><a href="#banner">Sobre</a></li>
+        <li class="nav-item"><a href="#cont">Quem Somos</a></li>
+        <li class="nav-item"><a href="#rodape">Contato</a></li>
+      </ul>
+    </div>
     </header>
 
     <section class="banner" id="banner" alt="Seção do banner do site!">

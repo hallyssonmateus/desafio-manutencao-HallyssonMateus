@@ -1,6 +1,13 @@
 const openModalButtom = document.querySelector("#botao-clicado");
 const fecharModalButtom = document.querySelector("#button-fechar");
 const modal = document.querySelector("#modalID");
+//Botão Menu - Usando Jquery
+$(document).ready(function(){
+    $('#mobile_btn').on('click', function(){
+        $('#mobile_menu').toggleClass('active');
+        $('#mobile_btn').find('i').toggleClass('fa-x');
+    });
+});
 
 //Função abrir modal
 const openModal = () => {

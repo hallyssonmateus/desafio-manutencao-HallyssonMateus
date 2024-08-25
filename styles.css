@@ -4,64 +4,88 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 /* Uso de variaveis pra definir as cores e fontes */
 :root {
     --fontTitle: 'Montserrat', sans-serif;
     --fontMessage: 'Chakra Petch', sans-serif;
     --corbotao: #2E8B57;
-    --cor1: #000;
+    --cor1: #1C1C1C;
     --cor2: #fff;
     --cor3: #FFD700;
     --corfechar: #4F4F4F;
     --corgrids: #87CEEB;
 }
 /* Estilização Barra de navegação */
-h1 {
-    font-family: var(--fontTitle);
+header {
+    width: 100%;
+    padding: 15px 8%;
+    background-color: var(--cor1);
 }
 
-h2 {
-    font-family: var(--fontTitle);
-}
-header {
+#navbar {
+    width: 100%;
     display: flex;
-    background-color: var(--cor1);
-    color: var(--cor2);
-    font-size: 18px;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    flex-wrap: wrap;
 }
-
-header > a {
+#nav_logo {
+    font-size: 24px;
     color: var(--cor2);
-    font-size: 30px;
-    font-weight: 700;
-    text-decoration: none;
 }
 
-header > nav > ul > li > a {
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
     color: var(--cor2);
-    font-size: 18px;
-    text-decoration: none;
-    cursor: pointer;
-    flex-wrap: wrap;
+    font-weight: 600;
 }
 
-header > nav > ul > li > a:hover {
+.nav-item a:hover {
     color: var(--cor3);
 }
 
-header > nav > ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
+.nav-item.active a {
+    color: var(--cor2);
+    border-bottom: 3px solid var(--cor2);
 }
 
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 1170px){
+    #nav_list {
+        display: none;
+    }
+    #mobile_btn {
+        display: block;
+        border: none;
+        color: var(--cor2);
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+}
 /* Estilização Banner */
 
 .banner {
@@ -69,7 +93,6 @@ header > nav > ul {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 400px;
     overflow: hidden;
 }
 
