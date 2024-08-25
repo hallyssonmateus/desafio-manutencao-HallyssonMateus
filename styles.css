@@ -98,6 +98,7 @@ section.slider{
     width: 100%;
     /* height: 550px; */
     overflow: hidden;
+    padding-bottom: 20px;
 }
 
 .slider-content {
@@ -118,6 +119,7 @@ section.slider{
     position: relative;
     text-align: center;
     transition: 1s;
+    background-color: #87CEEB;
 }
 
 .slide-box img {
@@ -129,7 +131,7 @@ section.slider{
 .nav-manual, .nav-auto {
     position: absolute;
     width: 100%;
-    margin-top: 52%;
+    margin-top: 45%;
     display: flex;
     justify-content: center;
 }
@@ -161,4 +163,61 @@ section.slider{
 }
 #radio3:checked ~ .active-slide{
     margin-left: -66.6666%;
+}
+
+/* Estilização Sobre Nós */
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding: 10px;
+    height: 600px;
+}
+
+.container_sobre {
+    display: flex;
+    padding-top: 30px;
+}
+
+#img_sobre {
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: url(./Img/empresa.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#img_sobre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#text_container {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.button-desing {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-family: var(--fontMessage);
+    font-size: 20px;
+    font-weight: 700;
+    background-color: var(--corbotao);
+    color: var(--cor2);
+    border-radius: 10px;
+    transition: 0.3s ease;;
+}
+
+.button-desing:hover {
+    background-color: var(--corgrids);
 }
