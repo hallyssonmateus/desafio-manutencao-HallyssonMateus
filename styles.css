@@ -338,3 +338,63 @@ section.slider{
     }
 }
 
+/* Estilização Contato */
+.contacto {
+    width: 100%;
+}
+
+.banner-contato {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 300px;
+    background-image: url(./Img/contato.webp);
+    background-size: cover;
+    /* background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.banner-contato  > h2 {
+    font-family: var(--fontTitle);
+    font-weight: 700;
+    padding: 20px 20px;
+}
+
+.content_cont {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.container_social > h3 {
+    font-weight: 700;
+    border-bottom: 3px solid var(--corgrids);
+}
+
+.container_itens_social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.fa-brands {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.itens_social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    size: 50px;
+}
