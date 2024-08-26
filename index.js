@@ -24,9 +24,32 @@ function proximaImg(){
         cont = 1
     }
 
-    document.getElementById('radio'+cont).checked = true
-
+        document.getElementById('radio'+cont).checked = true
 }
+
+// Seleciona todos os botões com a classe 'btn_somos'
+var buttons = document.querySelectorAll('.btn_somos');
+
+buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        // Seleciona o cartão pai do botão clicado
+        var card = this.closest('.card');
+        
+        // Alterna a classe 'ativar' no cartão clicado
+        card.classList.toggle('ativar');
+        
+        // Atualiza o texto do botão baseado no estado do cartão
+        if (card.classList.contains('ativar')) {
+            this.textContent = 'Leia Menos';
+        } else {
+            this.textContent = 'Leia mais';
+        }
+    });
+});
+
+
+
+
 //Função abrir modal
 const openModal = () => {
     modal.classList.remove("hide");
